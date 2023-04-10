@@ -4,7 +4,7 @@
 			<div class="container__row">
 				<div class="container__editor">
 					<h2>
-						Quill <span style="color: green">(MIT License)</span>&nbsp;
+						Quill <span style="color: green">(Лицензия: MIT)</span>&nbsp;
 						<a target="_blank" href="https://github.com/davidroyer/vue2-editor"
 							>Ссылка</a
 						>
@@ -14,6 +14,9 @@
 				<div class="container__editor">
 					<h2>
 						Tiny
+						<span style="color: red"
+							>(Лицензия: с ограничениями 1,000 editor loads p/m)</span
+						>&nbsp;
 						<a
 							target="_blank"
 							href="https://www.tiny.cloud/docs/tinymce/6/basic-example/"
@@ -33,7 +36,7 @@
 		</div>
 		<div class="container">
 			<h2>
-				TOAST UI Editor
+				TOAST UI Editor <span style="color: green">(Лицензия: MIT)</span>&nbsp;
 				<a
 					target="_blank"
 					href="https://github.com/nhn/tui.editor/tree/master/apps/vue-editor"
@@ -44,7 +47,7 @@
 		</div>
 		<div class="container">
 			<h2>
-				mavonEditor <span style="color: green">(MIT License)</span>&nbsp;
+				mavonEditor <span style="color: green">(Лицензия: MIT)</span>&nbsp;
 				<a target="_blank" href="http://www.mavoneditor.com/">Ссылка</a>
 			</h2>
 			<mavon-editor language="ru" style="height: 500px" />
