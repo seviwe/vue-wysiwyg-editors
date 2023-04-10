@@ -1,5 +1,3 @@
-# ssss
-
 ## Project setup
 ```
 npm install
