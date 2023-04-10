@@ -1,3 +1,5 @@
 .editorconfig
 README.md
 main.js
+package.json
+vue.config.js
