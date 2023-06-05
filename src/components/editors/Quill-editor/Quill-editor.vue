@@ -6,6 +6,7 @@
 			<button @click="saveContent">Сохранить</button>
 		</h2>
 		<VueEditor
+			:editorOptions="editorSettings"
 			v-model="content"
 			placeholder="Введите текст..."
 			style="height: 450px"
@@ -14,7 +15,12 @@
 </template>
 
 <script>
-import { VueEditor } from 'vue2-editor';
+import { VueEditor, Quill } from 'vue2-editor';
+import { ImageDrop } from 'quill-image-drop-module';
+import ImageResize from 'quill-image-resize-vue';
+
+Quill.register('modules/imageDrop', ImageDrop);
+Quill.register('modules/imageResize', ImageResize);
 
 export default {
 	components: {
@@ -23,6 +29,12 @@ export default {
 	data() {
 		return {
 			content: '',
+			editorSettings: {
+				modules: {
+					imageDrop: true,
+					imageResize: {},
+				},
+			},
 		};
 	},
 	methods: {

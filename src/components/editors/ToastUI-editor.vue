@@ -6,17 +6,26 @@
 			>&nbsp; <span style="color: green">(Лицензия: MIT)</span>&nbsp;
 			<button @click="saveContent">Сохранить</button>
 		</h2>
-		<Editor height="500px" ref="toastuiEditor" />
+		<Editor height="500px" ref="toastuiEditor" :options="editorOptions" />
 	</div>
 </template>
 
 <script>
 import '@toast-ui/editor/dist/toastui-editor.css';
 import { Editor } from '@toast-ui/vue-editor';
+import '@toast-ui/editor/dist/i18n/ru-ru';
 
 export default {
 	components: {
 		Editor,
+	},
+	data() {
+		return {
+			editorOptions: {
+				language: 'ru',
+				useCommandShortcut: true,
+			},
+		};
 	},
 	methods: {
 		saveContent: function () {
